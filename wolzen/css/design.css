@@ -1,0 +1,427 @@
+/*
+
+Trevor Booth - Web Development
+  
+  Colors:
+White- #FFF
+Grey - #777
+Gold/Yellow - #DAA520
+
+*/
+
+
+
+
+
+
+.clearfix{
+    clear: both;
+}
+* {
+    box-sizing: border-box;   
+}
+html{
+    background-color: black;
+    max-width: 2200px;
+    margin: 5px;   
+}
+/*.....Social Media Icons top right......*/
+
+.socMed{
+    float: right;
+    border: solid 1px #DAA520;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 10px;
+    font-family: 'Bungee Hairline', sans-serif;
+    display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.99s;
+  transition-duration: 0.99s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; 
+}
+.socMed:hover, .socMed:focus, .socMed:active{
+    background-color:#DAA520;
+    -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+.socMed i{
+    padding: 0 4px
+} 
+.socMed a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: bolder;
+}
+/* Remove margins and padding from the list, and add a black background color */
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 10px;   
+}
+/* Float the list items side by side; spreading them out evenly */
+.topnav li {
+    float: left;
+    width: 33.333%;
+    text-align: center
+}
+/* Style the links inside the list items */
+.topnav li a {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Bungee Hairline', cursive;
+     display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.99s;
+  transition-duration: 0.99s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+    font-weight: bolder;
+    
+}
+.topnav li a:hover, .topnav li a:focus, .topnav li a:active {
+     
+    transition-duration: .8s;
+      -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);  
+    
+}
+/* Hide the list item for small screen*/
+.topnav li.icon {display: none;}
+/*------------Wolzen \\\\\HEADER---------------------*/
+.wolzen{
+    font-size: 3em;
+    color: #FFF !important;
+    margin-top: 25px;
+    margin-bottom: 0;
+    border-bottom: solid #fff 3px; 
+    font-family: 'Arizonia', cursive;  
+}
+/*------------Contact Us  \\\\\ HEADER---------------------*/
+.contact{
+    color: #FFF;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Pontano Sans', sans-serif;
+}
+/*===============responsiveness of the image gallery================*/
+#five{/*Main piece in gallery*/
+    display: block;
+    margin: 50px auto;
+    padding: 70px;
+    height: 65vh;
+    border: solid 2px #DAA520
+}
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+}
+.gallery  div {
+  padding: 5px;
+}
+.gallery  div  img {
+  display: block;
+  float: left;
+  padding: 20px;
+  transition: .1s transform;
+  transform: translateZ(0); 
+}
+.gLink{
+    margin: 100px;
+    font-size: 2em;
+}
+
+/*==============="The Story" link floating on the Pic (Index)================*/
+#story{
+    margin: 25px 100px;
+    font-family: 'Pontano Sans', sans-serif;
+}
+#story h2{
+    color: #DAA520;   
+    border-bottom: solid #DAA520 1px;
+    margin-top: 70px;
+}
+/*========Paragraphs on index======*/
+#story p{
+    color: #FFF;
+    font-size: 1.8em;
+    margin: 30px 20px;
+}
+/*===============All of the text floating on the pic (Index)================*/
+.title a{
+    color: #DAA520;   
+}
+.backdrop {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../images/ben.jpg);
+  background-size: cover;
+  height: 80vh;
+  margin-top: 2px;
+}
+.title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: 'Pontano Sans', sans-serif;
+}
+.title h3 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3em;
+  white-space: nowrap;
+}
+.title p {
+  margin: 0;
+  font-size: 1.7em;
+}
+                 /* Contact Page Design   */
+.backdropContact{
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, .99),
+      rgba(0, 0, 0, .8)
+    ),
+    url(../images/bg_b.jpg);
+  background-size: cover;
+    width: 100%;
+  height: 85vh;
+  margin: 2px 0;
+  padding: 0;
+}
+.contactBlock { 
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    height: 80%;
+    text-align: center;
+    font-family: 'Pontano Sans', sans-serif;;
+    
+    
+}
+
+ .definition p{
+    color: #FFF;
+    margin-top: 50px;
+     text-align: left;
+     width: 90%
+    
+   
+}
+ .definition a{
+    padding-left: 5px;
+     margin-left: 20px;
+     float: right
+}
+#empty{
+    display: none;
+}
+/*______________________The block that the main text is sitting in__________________- */
+main {
+  max-width: 1600px;
+  margin: 20px auto;
+}
+a{
+    color: #DAA520;
+}
+/*------------Footer---------------------*/
+footer{
+    background-color: rgba(255,255,255,.4);
+    padding: 20px;
+    text-align: center;    
+}
+/*===============Back to top Anchor in the Footer================*/
+.up{
+     font-size: 1.3em;
+    margin-top: 0;
+    font-weight: bold;
+}
+ /*===============Bottom Social Media Icons================*/   
+    .container i{
+        width: 33%;
+        text-align: center;
+        margin: 15px 0;
+        padding-top: 10px
+    }
+/*===============Bottom Social Media Icons (Forces them to stack all at once.)================*/
+@media screen and (max-width:980px) {
+    .container i{
+        width: 100%;
+        padding-top: 0;   
+    }
+     /*_____________ Making the header not stack______________ */
+    .wolzen{
+        font-size: 2.5em;
+        
+    }
+    .socMed{
+        font-size: .9em;
+    }
+     .responsive {
+        width: 49.99%;
+        margin: 6px 0;
+    }
+    /*_____________ Making fonts fit______________ */
+    .welcome{
+        font-size: 2em;
+    }
+    .title p{
+        font-size: 1em;
+    }
+    .titleContact{
+        font-size: 2.5em;
+        top:55%
+    }
+      /*Gallery Response*/
+    #five{
+        padding: 20px;
+        width: 90%;
+    }
+    .gallery div img{
+        padding: 5px
+    }
+    .half, .quarter{
+        width: 49.9%
+    }
+    .last{
+        width: 100%;
+        padding: 35px !important;
+    }
+    .contactBlock{
+        font-size: 1em;
+    }
+
+                /*
+
+           _____________ Mobile Fixes______________ 
+
+                 */
+@media screen and (max-width:680px) {
+    .topnav{
+        margin-left: 60px;
+        background-color: black;
+        transform: none;
+        transition-property: none;
+    }
+    
+    .topnav li a{
+         transform: none;
+        transition-property: none;
+        font-weight: bolder;
+    }
+    .topnav li a:hover, .topnav li a:focus, .topnav li a:active {
+ -webkit-transform: translateY(0);
+  transform: translateY(0);
+    }
+  .topnav li:not(:first-child) {
+      display: none;
+    }
+  .topnav li.icon {
+      float: right;
+      margin: 0;
+      display: inline-block;
+      transform: none;
+      transition-property: none;
+      
+  }
+    .socMed{
+        transform: none;
+        transition-property: none;
+        
+    }
+/*===============Making Fonts Fit================*/
+    .wolzen{
+        font-size: 2em;
+    }
+    .title h3{
+        font-size: 1.5em;
+    }
+    .title p{
+        .9em;
+    }
+    #story p{
+        font-size: 1em;
+        margin: 0;
+    }
+    #story{
+        margin: 10px
+    }
+    footer > p{
+        font-size: .8em;
+    }
+    .galleryP{
+        font-size: .8em;
+    }
+    .welcome{
+        font-size:  1.5em;
+    }
+    .contactBlock{
+        font-size: .8em;
+    }
+    .definition p{
+        
+    }
+   
+    /*===============Hiding the Social Media Icons at the Top================*/
+    .socMed, .socMed i, .social a{
+        display: none; 
+    }
+    .long img{
+        width: 49.9%
+    }
+  .topnav.responsive {
+      position: relative; 
+    }
+  .topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive li {
+    float: none;
+    display: inline;
+     
+  }
+  .topnav.responsive li a {
+    display: block;
+    text-align: left;
+      z-index: 9999999;
+  }
+     .socMed, .socMed i, .social a{
+        display: none;
+    }
+    /*=================Gallery mobile==========*/
+     .responsive {
+        width: 100%;
+    }
+    .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,70 @@
+dropQuestions:
+    
+
+1. Create a database called SportsTeams.
+2. Create the Players and Teams tables. You may determine the appropriate data type for each column. Make sure to save all your statements in one text file to submit for the Basecamp To Do. Comment each section with the Task Number.
+3. Populate the Players and Teams tables with the sample data.
+4. Write an SQL statement that will display all the data in the table Players.
+5. Write an SQL statement that will list the names of all players stored in the table Players.
+6. Write an SQL statement that will display the name and average of the players listed in the table Players.
+7. Write an SQL statement that will display the Name and Average and will arrange the list according to batting average.
+8. Write an SQL statement that will display all of the player’s information sorted by batting average and alphabetically.
+9. Write an SQL statement that will list the player averages that are different. In other words, eliminate duplicates.
+10. Write an SQL statement that will display the player’s name and averages for all players listed in the Players table and having a batting average greater than .300.
+11. Write an SQL statement that will display a count of the number of players whose averages are between .300 and .330.
+12. Write an SQL statement that will display the number of players who have an average greater than or equal to .330.
+13. Write an SQL statement that will display the players’ names of all players who hold a batting average of .330 or greater.
+14. Write an SQL statement to determine highest batting average.
+
+
+15. Write an SQL statement to display the names of all players who hold a batting average greater than or equal to the average of all players.
+
+16. Write an SQL statement to display the names of all players who have a batting average less than half of all of the players’ averages.
+
+17. Upload your queries to Basecamp for this To Do Item
+
+
+ Answers:
+ 
+ 1. CREATE DATABASE SportsTeams;
+ 
+ 2. CREATE TABLE players ( number numeric(5) not null default '0', name varchar(50) not null default '', average  numeric(4) default null, team varchar(5) default null, primary key (name, number));
+ 
+ CREATE TABLE team(   team varchar(5) default null,  city varchar(50) default null,  name varchar(50) not null default '',    primary key (name));
+ 
+ 3.  INSERT INTO players (number, name, average, team) VALUES ('1', 'Baerga,C.','322', 'T1');
+ 
+     INSERT INTO team (team, city, name) VALUES ('T1', 'Clevland','Indians');
+ 
+ 4.  SELECT * FROM players;
+ 
+ 5.  SELECT name FROM players;
+ 
+ 6.  SELECT name, average FROM players;
+ 
+ 7.  SELECT average, name FROM players;
+ 
+ 8.  SELECT * FROM players ORDER BY name and average;
+ 
+ 9.  SELECT DISTINCT average FROM players;
+ 
+10.  SELECT average FROM players WHERE average > 300;
+
+11.  SELECT average FROM players WHERE average BETWEEN 300 and 600;
+
+12.  SELECT COUNT(average) FROM players WHERE average >=330;
+
+13.  SELECT name FROM players WHERE average >= 330;
+
+14.  SELECT MAX(average) FROM players;
+
+15.  SELECT name, average FROM players WHERE average>=(SELECT AVG(average) FROM players);
+
+16.  SELECT name, average FROM players WHERE average< (SELECT AVG(average) FROM players);
+
+
+
+
+ 
+
+

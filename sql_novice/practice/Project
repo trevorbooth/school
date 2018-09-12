@@ -1,0 +1,49 @@
+I have created  a Database for a restaurant's employees. This database would be used to save employees information such as: names, addresses, salary, hire date, their ID number, job code & names, and their job description.
+
+1.  ALTER AUTO_INCREMENT=225;
+   (This way the job_code don’t get confused with the staff_id)
+
+
+2.  ALTER TABLE staff ADD COLUMN job_codes INT DEFAULT NULL;
+   (Adding a column to assign job_code to each employee)
+
+
+3.  ALTER TABLE staff ADD FOREIGN KEY(job_code) REFERENCES staff_roles(job_code); 
+   (This gives the table a reference to look at what the job_code is)
+
+
+4.  UPDATE staff SET job_code='225' where staff_id='3';
+   (This assigns the job_code to a certain employee)
+
+
+5.  INSERT INTO staff  (last_name, first_name, address, job_code)
+    VALUES(‘Jobs','Charles','3975 View Ave. Austin','228');
+   (When new people are hired, jobs codes can be put in directly)
+
+
+6.  SELECT staff_id FROM staff WHERE job_code=226;
+   (Find everyone with a certain jobs)
+
+
+7.  SELECT * FROM staff WHERE last_name='Hill' AND first_name='Bob';
+8.  SELECT * FROM staff WHERE staff_id=4;
+   (You would be able to look up persons information with their name or staff_id)
+
+   
+9.  SELECT first_name, last_name FROM staff WHERE salary >= 30000;
+   (Shows employees that make 30000 or more)
+
+10. SELECT first_name, last_name FROM salary ORDER BY MIN(hire_date);
+   (To find out whom has worked here the longest)
+ 
+
+
+
+
+
+
+
+
+
+
+

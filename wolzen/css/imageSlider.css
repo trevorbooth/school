@@ -1,0 +1,17 @@
+html{
+    background-color: #111
+}
+body{
+    height: 100%;
+    display: block;
+}
+#slides{
+    height: 100%;
+    padding: 50px;
+    
+}
+#slides img{
+    width: 100%;
+    height: 100%;
+    
+}
